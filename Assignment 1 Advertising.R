@@ -1,0 +1,10 @@
+data = read.csv("Advertising.csv")
+par(mfrow = c (2,2))
+plot(data$TV,data$sales , xlab="TV", ylab="Sales", pch=1 , col=132)
+plot(data$radio, data$sales, xlab="Radio", ylab="Sales", pch=1 , col=81)
+plot(data$newspaper, data$sales, xlab="Newspaper", ylab="Sales", pch=1 , col=555)
+summary(data$TV)
+summary(data$radio)
+summary(data$newspaper)
+summary(data$sales)
+
